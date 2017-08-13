@@ -1,0 +1,15 @@
+h1 {
+  font: cursive; }
+
+h2 {
+  color: orange; }
+
+.outer {
+  text-align: left;
+  color: blue; }
+  .outer p {
+    color: blue; }
+  .outer .inner {
+    text-align: justify; }
+
+/*# sourceMappingURL=index.css.map */

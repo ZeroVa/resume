@@ -1,0 +1,18 @@
+@import './header.scss';
+
+$myred: blue;
+
+.outer {
+
+    text-align: left;
+    color: $myred;
+    p {
+        color: $myred;
+    }
+
+    .inner {
+        text-align: justify;
+    }
+
+
+}
