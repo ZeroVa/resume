@@ -1,15 +1,44 @@
-h1 {
-  font: cursive; }
+@media print {
+  @page {
+    margin: 0 -6cm; }
+  html {
+    margin: 0 6cm; }
 
-h2 {
-  color: orange; }
-
-.outer {
-  text-align: left;
-  color: blue; }
-  .outer p {
-    color: blue; }
-  .outer .inner {
-    text-align: justify; }
+  body {
+    margin: 0.25in; } }
+.resume {
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 400px) {
+    .resume {
+      max-width: 750px; } }
+  .resume ul {
+    margin: 0; }
+  .resume p {
+    margin: 5px;
+    line-height: 1.1em; }
+  .resume section h2 {
+    margin: 0; }
+  .resume .header .name {
+    display: inline-block; }
+    .resume .header .name * {
+      margin: 0; }
+  .resume .header .contact {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+    .resume .header .contact * {
+      margin: 0;
+      display: inline-block; }
+  .resume .job .info * {
+    display: inline-block;
+    margin: 0;
+    line-height: 1.5em; }
+  .resume .job .info .dates {
+    float: right;
+    display: inline-block;
+    margin-right: 70px; }
 
 /*# sourceMappingURL=index.css.map */

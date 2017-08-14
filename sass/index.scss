@@ -1,18 +1,71 @@
 @import './header.scss';
 
-$myred: blue;
+@media print {
+    @page {margin:0 -6cm}
+    html {margin:0 6cm}
+    body {
+        margin: 0.25in;
+    }
+}
+.resume {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width:400px) {
+        max-width: 750px;
+    }
 
-.outer {
+    @media print {
+        // max-width: 90%;
+    }
 
-    text-align: left;
-    color: $myred;
+    ul {
+        margin: 0;
+    }
+
     p {
-        color: $myred;
+        margin: 5px;;
+        line-height: 1.1em;
     }
 
-    .inner {
-        text-align: justify;
+    section {
+        h2 {
+            margin: 0;
+        }
     }
 
+    .header {
+        .name {
+            display: inline-block;
+            * {
+                margin: 0;
+            }
+        }
 
+        .contact {
+            text-align: right;
+            display: inline-block;
+            float: right;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            * {
+                margin: 0;
+                display: inline-block;
+            }
+        }
+    }
+    .job {
+        .info {
+            * {
+                display: inline-block;
+                margin: 0;
+                line-height: 1.5em;
+            }
+    
+            .dates {
+                float: right;
+                display: inline-block;
+                margin-right: 70px;
+            }
+        }
+    }
 }
