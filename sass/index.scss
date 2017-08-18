@@ -1,5 +1,23 @@
 @import './header.scss';
 
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:300,400');
+
+h1, h2, h3, h4, h5, h6, strong {
+    // font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;   
+}
+
+p, li {
+    // font-family: 'Faustina', serif;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.05rem;
+ }
+
+ h1, h2, h3 {
+     font-weight: 300;
+ }
+
 @media print {
     @page {margin:0 -6cm}
     html {margin:0 6cm}
@@ -10,26 +28,36 @@
 .resume {
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width:400px) {
+    @media screen and (min-width:450px) {
         max-width: 750px;
     }
 
-    @media print {
-        // max-width: 90%;
+    @media screen {
+        margin-bottom: 50px;
     }
 
     ul {
         margin: 0;
     }
 
-    p {
-        margin: 5px;;
-        line-height: 1.1em;
+    p, li {
+        @media print {    
+            margin: 4px;
+            line-height: 1.1em;
+        }
     }
 
     section {
+        h2, h3, h4 {
+            @media print {
+                margin: 0;
+            }
+        }
+
         h2 {
-            margin: 0;
+            @media screen {
+                margin-bottom: 0.3em;
+            }
         }
     }
 
@@ -37,34 +65,87 @@
         .name {
             display: inline-block;
             * {
-                margin: 0;
+                @media print {
+                    margin: 0;
+                }
             }
         }
 
         .contact {
-            text-align: right;
+            @media (min-width:450px) {
+                float: right;
+                text-align: right;
+            }
             display: inline-block;
-            float: right;
             margin-top: 1em;
             margin-bottom: 1em;
             * {
-                margin: 0;
-                display: inline-block;
+                @media print {
+                    margin: 0;
+                }
+                @media screen {
+                    margin-bottom: 0.2em;
+                    margin-top: 0.2em;
+                }
+                display: block;
+                
             }
         }
     }
-    .job {
+
+    .job:first-child {
+        .info {
+            *{
+                @media screen {
+                    margin-top: 0;
+                }
+            }
+        }        
+    }
+    .job, .education {
+        .school {
+            .info {
+                h3 {
+                    @media screen {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        
         .info {
             * {
                 display: inline-block;
-                margin: 0;
-                line-height: 1.5em;
+                @media print{
+                    margin: 0;
+                    line-height: 1.8em;
+                }
+                @media screen {
+                    margin-bottom: 0.5em;
+                    line-height: 2em;    
+                }
+            }
+
+            .school-info {
+                width: 100%;
             }
     
             .dates {
-                float: right;
-                display: inline-block;
+                @media (min-width:690px) {
+                    float: right;
+                    display: inline-block;
+                }
+
+                @media screen and (min-width:690px){
+                    margin-top: 1em;
+                }
+
+                display: block;
+                // float: right;
                 margin-right: 70px;
+                margin-top: 0;
+                margin-bottom: 0;
             }
         }
     }
