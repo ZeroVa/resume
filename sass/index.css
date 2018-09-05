@@ -103,20 +103,45 @@ h3 {
   .resume .job .info .school-info,
   .resume .education .info .school-info {
     width: 100%; }
-  .resume .job .info .dates,
-  .resume .education .info .dates {
-    display: block;
-    margin-right: 70px;
-    margin-top: 0;
-    margin-bottom: 0; }
-    @media (min-width: 690px) {
-      .resume .job .info .dates,
-      .resume .education .info .dates {
-        float: right;
+  @media (min-width: 690px) {
+    .resume .job .info .dates,
+    .resume .education .info .dates {
+      float: right;
+      display: inline-block; } }
+  @media screen and (min-width: 690px) {
+    .resume .job .info .dates,
+    .resume .education .info .dates {
+      margin-top: 1em;
+      display: block;
+      margin-right: 70px;
+      margin-top: 0;
+      margin-bottom: 0; }
+      .resume .job .info .dates .info *,
+      .resume .education .info .dates .info * {
         display: inline-block; } }
     @media screen and (min-width: 690px) {
-      .resume .job .info .dates,
-      .resume .education .info .dates {
+      .resume .job .info .dates .info *,
+      .resume .education .info .dates .info * {
+        margin-bottom: 0.5em;
+        line-height: 2em; } }
+  @media screen and (min-width: 690px) {
+      .resume .job .info .dates .info .school-info,
+      .resume .education .info .dates .info .school-info {
+        width: 100%; }
+      .resume .job .info .dates .info .dates,
+      .resume .education .info .dates .info .dates {
+        display: block;
+        margin-right: 70px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 690px) and (min-width: 690px) {
+      .resume .job .info .dates .info .dates,
+      .resume .education .info .dates .info .dates {
+        float: right;
+        display: inline-block; } }
+    @media screen and (min-width: 690px) and (min-width: 690px) {
+      .resume .job .info .dates .info .dates,
+      .resume .education .info .dates .info .dates {
         margin-top: 1em; } }
 
 /*# sourceMappingURL=index.css.map */

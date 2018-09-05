@@ -164,13 +164,48 @@ h3 {
 
         @media screen and (min-width: 690px) {
           margin-top: 1em;
-        }
 
-        display: block;
-        // float: right;
-        margin-right: 70px;
-        margin-top: 0;
-        margin-bottom: 0;
+          .info {
+            * {
+              display: inline-block;
+              @media print {
+                margin: 0;
+                line-height: 1.6em;
+              }
+              @media screen {
+                margin-bottom: 0.5em;
+                line-height: 2em;
+              }
+            }
+
+            .school-info {
+              width: 100%;
+            }
+
+            .dates {
+              @media (min-width: 690px) {
+                float: right;
+                display: inline-block;
+              }
+
+              @media screen and (min-width: 690px) {
+                margin-top: 1em;
+              }
+
+              display: block;
+              // float: right;
+              margin-right: 70px;
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+          }
+
+          display: block;
+          // float: right;
+          margin-right: 70px;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
       }
     }
   }
