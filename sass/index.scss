@@ -1,152 +1,177 @@
-@import './header.scss';
+@import "./header.scss";
 
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:300,400');
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:300,400");
 
-h1, h2, h3, h4, h5, h6, strong {
-    // font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;   
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  // font-family: 'Josefin Sans', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
-p, li {
-    // font-family: 'Faustina', serif;
-    font-family: 'EB Garamond', serif;
-    font-size: 1.05rem;
- }
+p,
+li {
+  // font-family: 'Faustina', serif;
+  font-family: "EB Garamond", serif;
+  font-size: 1.05rem;
+}
 
- h1, h2, h3 {
-     font-weight: 300;
- }
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
 
 @media print {
-    @page {margin:0 -6cm}
-    html {margin:0 6cm}
-    body {
-        margin: 0.25in;
-    }
+  @page {
+    margin: 0 -6cm;
+  }
+  html {
+    margin: 0 6cm;
+  }
+  body {
+    margin: 0.25in;
+  }
+}
+
+@media screen {
+  html {
+    background-image: url(./bg.png);
+  }
 }
 .resume {
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (min-width:450px) {
-        max-width: 750px;
-    }
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 450px) {
+    max-width: 750px;
+  }
 
-    @media screen {
-        margin-bottom: 50px;
-    }
+  @media screen {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff55;
+    margin-bottom: 50px;
+  }
 
-    ul {
+  ul {
+    margin: 0;
+  }
+
+  p,
+  li {
+    @media print {
+      margin: 4px;
+      line-height: 1.1em;
+    }
+  }
+
+  section {
+    h2,
+    h3,
+    h4 {
+      @media print {
         margin: 0;
+      }
     }
 
-    p, li {
-        @media print {    
-            margin: 4px;
-            line-height: 1.1em;
+    h2 {
+      @media screen {
+        margin-bottom: 0.3em;
+      }
+    }
+  }
+
+  .header {
+    .name {
+      display: inline-block;
+      * {
+        @media print {
+          margin: 0;
         }
+      }
     }
 
-    section {
-        h2, h3, h4 {
-            @media print {
-                margin: 0;
-            }
+    .contact {
+      @media (min-width: 450px) {
+        float: right;
+        text-align: right;
+      }
+      display: inline-block;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      * {
+        @media print {
+          margin: 0;
         }
+        @media screen {
+          margin-bottom: 0.2em;
+          margin-top: 0.2em;
+        }
+        display: block;
+      }
+    }
+  }
 
-        h2 {
-            @media screen {
-                margin-bottom: 0.3em;
-            }
+  .job:first-child {
+    .info {
+      * {
+        @media screen {
+          margin-top: 0;
         }
+      }
+    }
+  }
+  .job,
+  .education {
+    .school {
+      .info {
+        h3 {
+          @media screen {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
+      }
     }
 
-    .header {
-        .name {
-            display: inline-block;
-            * {
-                @media print {
-                    margin: 0;
-                }
-            }
+    .info {
+      * {
+        display: inline-block;
+        @media print {
+          margin: 0;
+          line-height: 1.6em;
+        }
+        @media screen {
+          margin-bottom: 0.5em;
+          line-height: 2em;
+        }
+      }
+
+      .school-info {
+        width: 100%;
+      }
+
+      .dates {
+        @media (min-width: 690px) {
+          float: right;
+          display: inline-block;
         }
 
-        .contact {
-            @media (min-width:450px) {
-                float: right;
-                text-align: right;
-            }
-            display: inline-block;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            * {
-                @media print {
-                    margin: 0;
-                }
-                @media screen {
-                    margin-bottom: 0.2em;
-                    margin-top: 0.2em;
-                }
-                display: block;
-                
-            }
+        @media screen and (min-width: 690px) {
+          margin-top: 1em;
         }
+
+        display: block;
+        // float: right;
+        margin-right: 70px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
     }
-
-    .job:first-child {
-        .info {
-            *{
-                @media screen {
-                    margin-top: 0;
-                }
-            }
-        }        
-    }
-    .job, .education {
-        .school {
-            .info {
-                h3 {
-                    @media screen {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
-        
-        .info {
-            * {
-                display: inline-block;
-                @media print{
-                    margin: 0;
-                    line-height: 1.6em;
-                }
-                @media screen {
-                    margin-bottom: 0.5em;
-                    line-height: 2em;    
-                }
-            }
-
-            .school-info {
-                width: 100%;
-            }
-    
-            .dates {
-                @media (min-width:690px) {
-                    float: right;
-                    display: inline-block;
-                }
-
-                @media screen and (min-width:690px){
-                    margin-top: 1em;
-                }
-
-                display: block;
-                // float: right;
-                margin-right: 70px;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-        }
-    }
+  }
 }
