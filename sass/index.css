@@ -73,7 +73,7 @@ h1, h2, h3 {
     @media print {
       .resume .job .info *, .resume .education .info * {
         margin: 0;
-        line-height: 1.8em; } }
+        line-height: 1.6em; } }
     @media screen {
       .resume .job .info *, .resume .education .info * {
         margin-bottom: 0.5em;
