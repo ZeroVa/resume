@@ -132,6 +132,7 @@ h3 {
       .info {
         h3 {
           @media screen {
+            margin-top: 0;
             margin-bottom: 0;
           }
         }
@@ -182,6 +183,11 @@ h3 {
             }
 
             .dates {
+              display: block;
+              // float: right;
+              margin-right: 70px;
+              margin-top: 0;
+              margin-bottom: 0;
               @media (min-width: 690px) {
                 float: right;
                 display: inline-block;
@@ -191,18 +197,12 @@ h3 {
                 margin-top: 1em;
               }
 
-              display: block;
-              // float: right;
-              margin-right: 70px;
-              margin-top: 0;
-              margin-bottom: 0;
             }
           }
 
           display: block;
           // float: right;
           margin-right: 70px;
-          margin-top: 0;
           margin-bottom: 0;
         }
       }
