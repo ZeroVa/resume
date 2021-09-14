@@ -28,6 +28,7 @@ h3 {
 }
 
 @media print {
+  .pagebreak { page-break-after: always; }
   @page {
     margin: 0 -6cm;
   }

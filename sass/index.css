@@ -7,140 +7,202 @@ h5,
 h6,
 strong {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 p,
 li {
   font-family: "EB Garamond", serif;
-  font-size: 1.05rem; }
+  font-size: 1.05rem;
+}
 
 h1,
 h2,
 h3 {
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 @media print {
+  .pagebreak {
+    page-break-after: always;
+  }
+
   @page {
-    margin: 0 -6cm; }
+    margin: 0 -6cm;
+  }
   html {
-    margin: 0 6cm; }
+    margin: 0 6cm;
+  }
 
   body {
-    margin: 0.25in; } }
+    margin: 0.25in;
+  }
+}
 @media screen {
   html {
-    background-image: url(./bg.png); } }
+    background-image: url(./bg.png);
+  }
+}
 .resume {
   margin-left: auto;
-  margin-right: auto; }
-  @media screen and (min-width: 450px) {
-    .resume {
-      max-width: 750px; } }
-  @media screen {
-    .resume {
-      padding-left: 20px;
-      padding-right: 20px;
-      background-color: #ffffff55;
-      margin-bottom: 50px; } }
-  .resume ul {
-    margin: 0; }
-  @media print {
-    .resume p,
-    .resume li {
-      margin: 4px;
-      line-height: 1.1em; } }
-  @media print {
-    .resume section h2,
-    .resume section h3,
-    .resume section h4 {
-      margin: 0; } }
-  @media screen {
-    .resume section h2 {
-      margin-bottom: 0.3em; } }
-  .resume .header .name {
-    display: inline-block; }
-    @media print {
-      .resume .header .name * {
-        margin: 0; } }
+  margin-right: auto;
+}
+@media screen and (min-width: 450px) {
+  .resume {
+    max-width: 750px;
+  }
+}
+@media screen {
+  .resume {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff55;
+    margin-bottom: 50px;
+  }
+}
+.resume ul {
+  margin: 0;
+}
+@media print {
+  .resume p,
+.resume li {
+    margin: 4px;
+    line-height: 1.1em;
+  }
+}
+@media print {
+  .resume section h2,
+.resume section h3,
+.resume section h4 {
+    margin: 0;
+  }
+}
+@media screen {
+  .resume section h2 {
+    margin-bottom: 0.3em;
+  }
+}
+.resume .header .name {
+  display: inline-block;
+}
+@media print {
+  .resume .header .name * {
+    margin: 0;
+  }
+}
+.resume .header .contact {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+@media (min-width: 450px) {
   .resume .header .contact {
-    display: inline-block;
-    margin-top: 1em;
-    margin-bottom: 1em; }
-    @media (min-width: 450px) {
-      .resume .header .contact {
-        float: right;
-        text-align: right; } }
-    .resume .header .contact * {
-      display: block; }
-      @media print {
-        .resume .header .contact * {
-          margin: 0; } }
-      @media screen {
-        .resume .header .contact * {
-          margin-bottom: 0.2em;
-          margin-top: 0.2em; } }
-  @media screen {
-    .resume .job:first-child .info * {
-      margin-top: 0; } }
-  @media screen {
-    .resume .job .school .info h3,
-    .resume .education .school .info h3 {
-      margin-top: 0;
-      margin-bottom: 0; } }
+    float: right;
+    text-align: right;
+  }
+}
+.resume .header .contact * {
+  display: block;
+}
+@media print {
+  .resume .header .contact * {
+    margin: 0;
+  }
+}
+@media screen {
+  .resume .header .contact * {
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+  }
+}
+@media screen {
+  .resume .job:first-child .info * {
+    margin-top: 0;
+  }
+}
+@media screen {
+  .resume .job .school .info h3,
+.resume .education .school .info h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.resume .job .info *,
+.resume .education .info * {
+  display: inline-block;
+}
+@media print {
   .resume .job .info *,
-  .resume .education .info * {
-    display: inline-block; }
-    @media print {
-      .resume .job .info *,
-      .resume .education .info * {
-        margin: 0;
-        line-height: 1.6em; } }
-    @media screen {
-      .resume .job .info *,
-      .resume .education .info * {
-        margin-bottom: 0.5em;
-        line-height: 2em; } }
-  .resume .job .info .school-info,
-  .resume .education .info .school-info {
-    width: 100%; }
-  @media (min-width: 690px) {
-    .resume .job .info .dates,
-    .resume .education .info .dates {
-      float: right;
-      display: inline-block; } }
-  @media screen and (min-width: 690px) {
-    .resume .job .info .dates,
-    .resume .education .info .dates {
-      margin-top: 1em;
-      display: block;
-      margin-right: 70px;
-      margin-bottom: 0; }
-      .resume .job .info .dates .info *,
-      .resume .education .info .dates .info * {
-        display: inline-block; } }
-    @media screen and (min-width: 690px) {
-      .resume .job .info .dates .info *,
-      .resume .education .info .dates .info * {
-        margin-bottom: 0.5em;
-        line-height: 2em; } }
-  @media screen and (min-width: 690px) {
-      .resume .job .info .dates .info .school-info,
-      .resume .education .info .dates .info .school-info {
-        width: 100%; }
-      .resume .job .info .dates .info .dates,
-      .resume .education .info .dates .info .dates {
-        display: block;
-        margin-right: 70px;
-        margin-top: 0;
-        margin-bottom: 0; } }
-    @media screen and (min-width: 690px) and (min-width: 690px) {
-      .resume .job .info .dates .info .dates,
-      .resume .education .info .dates .info .dates {
-        float: right;
-        display: inline-block; } }
-    @media screen and (min-width: 690px) and (min-width: 690px) {
-      .resume .job .info .dates .info .dates,
-      .resume .education .info .dates .info .dates {
-        margin-top: 1em; } }
+.resume .education .info * {
+    margin: 0;
+    line-height: 1.6em;
+  }
+}
+@media screen {
+  .resume .job .info *,
+.resume .education .info * {
+    margin-bottom: 0.5em;
+    line-height: 2em;
+  }
+}
+.resume .job .info .school-info,
+.resume .education .info .school-info {
+  width: 100%;
+}
+@media (min-width: 690px) {
+  .resume .job .info .dates,
+.resume .education .info .dates {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 690px) {
+  .resume .job .info .dates,
+.resume .education .info .dates {
+    margin-top: 1em;
+    display: block;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .resume .job .info .dates .info *,
+.resume .education .info .dates .info * {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 690px) {
+  .resume .job .info .dates .info *,
+.resume .education .info .dates .info * {
+    margin-bottom: 0.5em;
+    line-height: 2em;
+  }
+}
+@media screen and (min-width: 690px) {
+  .resume .job .info .dates .info .school-info,
+.resume .education .info .dates .info .school-info {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 690px) {
+  .resume .job .info .dates .info .dates,
+.resume .education .info .dates .info .dates {
+    display: block;
+    margin-right: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 690px) and (min-width: 690px) {
+  .resume .job .info .dates .info .dates,
+.resume .education .info .dates .info .dates {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 690px) and (min-width: 690px) {
+  .resume .job .info .dates .info .dates,
+.resume .education .info .dates .info .dates {
+    margin-top: 1em;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
