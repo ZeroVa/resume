@@ -67,7 +67,7 @@ h3 {
   li {
     @media print {
       margin: 4px;
-      line-height: 1.1em;
+      line-height: 1.05em;
     }
   }
 
@@ -145,7 +145,7 @@ h3 {
         display: inline-block;
         @media print {
           margin: 0;
-          line-height: 1.6em;
+          line-height: 1.2em;
         }
         @media screen {
           margin-bottom: 0.5em;

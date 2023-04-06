@@ -67,7 +67,7 @@ h3 {
   .resume p,
 .resume li {
     margin: 4px;
-    line-height: 1.1em;
+    line-height: 1.05em;
   }
 }
 @media print {
@@ -135,7 +135,7 @@ h3 {
   .resume .job .info *,
 .resume .education .info * {
     margin: 0;
-    line-height: 1.6em;
+    line-height: 1.2em;
   }
 }
 @media screen {
